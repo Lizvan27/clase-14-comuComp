@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="col-12">
+        <h1>SESI&Oacute;N 14</h1>
+        <app-padre></app-padre>
+    </div>
+
+    <div class="col-12">
+        <div>
+            <h1>SESI&Oacute;N 15</h1>
+            <h3>{{titulo}}</h3>
+            <div>
+                <p>Event biding</p>
+                <button (click)="ver()">
+                    {{ evento? "Ocultar" : "Mostrar" }}
+                </button>
+                <div *ngIf="evento">
+                    <p>
+                    Event Binding, es el mecanismo de data binding mediante el cual trabaja con los eventos que se encuentran en el DOM
+                    </p>
+                </div>
+                <div>
+                    <p>Two way binding</p>
+                    <div>
+                        <p>{{texto}}</p>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="10" [(ngModel)]="texto"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

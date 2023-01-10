@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./padre.component.css']
 })
 export class PadreComponent {
-  texto: String = '';
+  texto: string = '';
 }

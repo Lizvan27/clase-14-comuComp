@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./hijo.component.css']
 })
 export class HijoComponent {
- @Input() texto: String= '';
+ @Input() texto: string= '';
 }

@@ -1,16 +1,15 @@
 <div class="container">
-    <div class="col-12">
-        <h1>SESI&Oacute;N 14</h1>
+    <div>
         <app-padre></app-padre>
     </div>
 
-    <div class="col-12">
+    <div class="p-3 mb-2 bg-success text-white">
         <div>
-            <h1>SESI&Oacute;N 15</h1>
+            <h1 class="text-center">SESI&Oacute;N 15</h1>
             <h3>{{titulo}}</h3>
             <div>
                 <p>Event biding</p>
-                <button (click)="ver()">
+                <button (click)="ver()" type="button" class="btn btn-dark rounded-pill">
                     {{ evento? "Ocultar" : "Mostrar" }}
                 </button>
                 <div *ngIf="evento">
@@ -23,8 +22,9 @@
                     <div>
                         <p>{{texto}}</p>
                     </div>
-                    <div>
-                        <textarea name="" id="" cols="30" rows="10" [(ngModel)]="texto"></textarea>
+                    <div class="col-5">
+                        <textarea name="" id="" cols="1" rows="6" [(ngModel)]="texto" class="form-control"></textarea>
+                    </div>    
                 </div>
             </div>
         </div>
